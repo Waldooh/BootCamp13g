@@ -3,6 +3,10 @@
 // ES5 - scope global | funcional
 
 // scope de bloque -> 
+// * habia una vez
+// ! cuidado
+// ?será que esto bien?
+// TODO no se para que es pero asi es
 
 if(true) {
         var name = "Fernanda"
