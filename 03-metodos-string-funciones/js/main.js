@@ -46,22 +46,22 @@ Ejercicio 5:
     Output: "el string {string 1} es el más largo"
 */
 
-console.log("---------Ejercicio 5----------")
-// Declaración
-function compareString(string1, string2) {
-    let lengthString1 = string1.length
-    let lengthString2 = string2.length
-    let result
-    if(lengthString1 > lengthString2) {
-        result = "String 1 es mayor"
-    }else if(lengthString1 < lengthString2) {
-        result = String 2 es mayor
-    }else {
-        return "Ambos strings son iguales"
-    }
-}
-// Ejecutar función
-console.log(compareString("Ingresa un string, El segundo string es más largo"))
+// console.log("---------Ejercicio 5----------")
+// // Declaración
+// function compareString(string1, string2) {
+//     let lengthString1 = string1.length
+//     let lengthString2 = string2.length
+//     let result
+//     if(lengthString1 > lengthString2) {
+//         result = "String 1 es mayor"
+//     }else if(lengthString1 < lengthString2) {
+//         result = String 2 es mayor
+//     }else {
+//         return "Ambos strings son iguales"
+//     }
+// }
+// // Ejecutar función
+// console.log(compareString("Ingresa un string, El segundo string es más largo"))
 
 /*
 Ejercicio 6:
