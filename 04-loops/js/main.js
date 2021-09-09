@@ -37,11 +37,22 @@
 
 // Ejercicio 2
 
-let num = prompt("Ingresa un numero: ")
-num = Number(num)
+// let num = prompt("Ingresa un numero: ")
+// num = Number(num)
 
-for(let i=0; i<=10; i++){
-    result = i * num
-    console.log(`${num} x ${i} = ${result}`)
+// for(let i=0; i<=10; i++){
+//     result = i * num
+//     console.log(`${num} x ${i} = ${result}`)
+// }
+
+// Ejercicio 5
+
+let str = "**************"
+let lengthStr = str.length
+let result = ""
+
+for(let index = 0; index < lengthStr; index++){
+    result += str.charAt(index)
+    console.log(result)
 }
 
