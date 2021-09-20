@@ -26,3 +26,5 @@ for(let i=1; i<=numeroKoders; i++){
 for (let i=0; i<nombreKoders.length; i++){
     console.log(`Koder ${i+1}: ${nombreKoders[i]}`)
 }
+
+
