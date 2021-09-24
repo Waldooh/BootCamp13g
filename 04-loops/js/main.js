@@ -1,58 +1,42 @@
 // Input: "kodemia"
 // Output: "KoDeMiA"
 
+// Ejercicio 1
+let word = prompt("Ingresa una palabra:")
+let lengthStr = word.length
+let result = ""
 
-// let str = prompt("Ingresa una palabra: ")
-// let lengthStr = str.length
-// let result = ""
-
-// for(let index = 0; index < lengthStr; index++){
-//     if(index % 2 === 0){
-//         result += str.charAt(index).toUpperCase()
-//     }
-//     else{
-//         result += str.charAt(index).toLowerCase()
-//     }
-// }
-// console.log("Input: ", str)
-// console.log("Output: ", result)
-
-
-// let str = "**************"
-// let lengthStr = str.length
-// let result = ""
-
-// for(let index = 0; index < lengthStr; index++){
-//     // if(index % 2 === 0){
-//     //     result += str.charAt(index).toUpperCase()
-//     // }
-//     // else{
-//     //     result += str.charAt(index).toLowerCase()
-//     console.log("Output: ", result)
-//     }
-
-
-// console.log("Input: ", str)
+function ejercicio1() {
+    for(let index = 0; index < lengthStr; index++){
+        if(index % 2 === 0){
+            result += word.charAt(index).toUpperCase()
+        }
+        else{
+            result += word.charAt(index).toLowerCase()
+        }
+    }
+    return result
+}
+console.log("Input: ", word)
+console.log("Output: ", ejercicio1())
 
 
 // Ejercicio 2
+let num = prompt("Ingresa un numero:")
+num = Number(num)
 
-// let num = prompt("Ingresa un numero: ")
-// num = Number(num)
-
-// for(let i=0; i<=10; i++){
-//     result = i * num
-//     console.log(`${num} x ${i} = ${result}`)
-// }
+for(let i=0; i<=10; i++){
+    result = i * num
+    console.log(`${num} x ${i} = ${result}`)
+}
 
 // Ejercicio 5
+let aster = "**************"
+let lengthAster = aster.length
+let resultado = ""
 
-let str = "**************"
-let lengthStr = str.length
-let result = ""
-
-for(let index = 0; index < lengthStr; index++){
-    result += str.charAt(index)
-    console.log(result)
+for(let index = 0; index < lengthAster; index++){
+    resultado += aster.charAt(index)
+    console.log(resultado)
 }
 
