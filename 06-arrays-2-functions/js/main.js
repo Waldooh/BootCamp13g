@@ -33,7 +33,6 @@ const arrayKoders = [
     "Clau Rodriguez"
   ]
 
-
 /*
 Obtener:
 [
@@ -51,8 +50,6 @@ const splitKoders = (array) => {
     }
     return splittedNames
 }
-
-
 
 function printKoders(array) {
     for(let i = 0; i < array.length; i++) {
