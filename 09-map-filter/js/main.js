@@ -1,28 +1,29 @@
 
 
-// Metodo .map 
-let numbersArray = [2,6,7,10,5];
+// // Metodo .map 
+// let numbersArray = [2,6,7,10,5];
 
-let doubleNumbers = numbersArray.map((number, index) => number * 2)
+// let doubleNumbers = numbersArray.map((number, index) => number * 2)
 
-console.log('------Array Numbers------')
-console.log(numbersArray)
-console.log('------Double Numbers------')
-console.log(doubleNumbers)
-
-
+// console.log('------Array Numbers------')
+// console.log(numbersArray)
+// console.log('------Double Numbers------')
+// console.log(doubleNumbers)
 
 
-// Metodo .filter
-let numerosPares = numbersArray.filter((number) => {
-    if(number % 2 === 0) {
-        return number
-    }
-})
 
-let numerosPares2 = numbersArray.filter((number) =>  number % 2 === 0)
-console.log('------.filter Pares Numbers------')
-console.log(numerosPares)
+
+// // Metodo .filter
+// let numerosPares = numbersArray.filter((number) => {
+//     if(number % 2 === 0) {
+//         return number
+//     }
+// })
+
+// // filter avanzado
+// let numerosPares2 = numbersArray.filter((number) =>  number % 2 === 0)
+// console.log('------.filter Pares Numbers------')
+// console.log(numerosPares)
 
 
 
@@ -95,26 +96,29 @@ const songsData = [
 ]
 
 /*
-- Agrupar el nombres de la bandas, que no esten repetidas
+- Agrupar el nombres de las bandas, que no esten repetidas
 - Agrupar las canciones por banda
 - La cancion con más reproducciones
 - La cancion con más likes
 */
 
 
-/*
-let songsMana = [
-    {
-    }
-]
-*/
+// Agrupar bandas
+const arrayBands = songsData.map((banda) => {
+    return banda.band
+})
+const arrayBandsByOne = arrayBands.filter((band, index, arrayBands) => {
+    return index === arrayBands.indexOf(band)
+})
+console.log(arrayBandsByOne)
 
+// Agrupar canciones
 const getSongsByBand = (arraySongs, bandName) => {
     let songs = arraySongs.filter((song, index) => song.band.toLowerCase() === bandName.toLowerCase())
     return songs
 }
-
 console.log(getSongsByBand(songsData, "Maná"))
+
 
 /*
 Obtener una lista de strings con el siguiente formato:
@@ -142,3 +146,4 @@ const searchSong = (arraySong, property, wordToSearch) => {
     const songs = arraySong.filter((song) => song[property].toLowerCase().includes(wordToSearch.toLowerCase()))
     return songs
 }
+// [property] manera dinámica de acceder al criterio del objeto
